@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_progress"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.zm.framegather.activity.ProgressActivity"
+    xmlns:myRound="http://schemas.android.com/apk/res-auto"
+    xmlns:myLine="http://schemas.android.com/apk/res-auto">
+
+    <com.zm.framegather.view.MyCircle
+        android:id="@+id/progress1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        myRound:myRoundColor="@color/gray_drak"
+        myRound:myRoundWidth="15dp"
+        myRound:myRoundProgressColor="@color/red"
+        ></com.zm.framegather.view.MyCircle>
+
+    <com.zm.framegather.view.MyCircle
+        android:id="@+id/progress2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        myRound:myRoundColor="@color/gray_drak"
+        myRound:myRoundWidth="15dp"
+        myRound:myRoundProgressColor="@color/red"
+        ></com.zm.framegather.view.MyCircle>
+
+    <com.zm.framegather.view.MyCircle
+        android:id="@+id/progress3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/progress1"
+        myRound:myRoundColor="@color/gray_drak"
+        myRound:myRoundWidth="15dp"
+        myRound:myRoundProgressColor="@color/red"
+        ></com.zm.framegather.view.MyCircle>
+
+    <com.zm.framegather.view.MyCircle
+        android:id="@+id/progress4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/progress2"
+        android:layout_alignParentRight="true"
+        myRound:myRoundColor="@color/gray_drak"
+        myRound:myRoundWidth="15dp"
+        myRound:myRoundProgressColor="@color/red"
+        ></com.zm.framegather.view.MyCircle>
+
+    <com.zm.framegather.view.MyProgessLine
+        android:id="@+id/progress5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        myLine:myLineBmColor="@color/gray_drak"
+        myLine:myLineBmHight="15dp"
+        myLine:myLineColor="@color/red"
+        myLine:myLineHight="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/progress3"
+        android:layout_centerHorizontal="true"></com.zm.framegather.view.MyProgessLine>
+
+
+</RelativeLayout>

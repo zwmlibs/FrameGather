@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_advertisement"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.zm.framegather.activity.AdvertisementActivity"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/LLContent"
+        android:layout_below="@+id/adsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ImgGifPic"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                fresco:failureImage="@drawable/hot"
+                fresco:placeholderImage="@drawable/hot"
+                fresco:retryImage="@drawable/hot"
+                fresco:failureImageScaleType="centerCrop"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:roundAsCircle="false" />
+
+            <TextView
+                android:id="@+id/TXTTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="标题"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/TXTContext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:text="内容"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLContent2"
+        android:layout_below="@+id/adsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ImgGifPic2"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                fresco:failureImage="@drawable/hot"
+                fresco:placeholderImage="@drawable/hot"
+                fresco:retryImage="@drawable/hot"
+                fresco:failureImageScaleType="centerCrop"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:roundAsCircle="false" />
+
+            <TextView
+                android:id="@+id/TXTTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="标题"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TXTContext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:text="内容"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/adsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" />
+
+    <FrameLayout
+        android:layout_below="@+id/LLContent"
+        android:id="@+id/adsFragment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" />
+
+</RelativeLayout>

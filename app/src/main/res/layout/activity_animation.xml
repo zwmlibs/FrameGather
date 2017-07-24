@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <Button android:id="@+id/buttonA"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5px"
+                    android:text="顺序显示"
+                    android:textColor="@color/white"
+                android:background="@drawable/btn_yellow_selector"/>
+
+            <Button android:id="@+id/buttonB"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5px"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="停止"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_yellow_selector"/>
+
+            <Button android:id="@+id/buttonC"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5px"
+                    android:text="倒序显示"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_yellow_selector"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <Button android:id="@+id/buttonD"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5px"
+                    android:text="顺时针"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_yellow_selector"/>
+
+            <Button android:id="@+id/buttonE"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5px"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="逆时针"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_yellow_selector"/>
+
+            <Button android:id="@+id/buttonF"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5px"
+                    android:text="透明"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_yellow_selector"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <Button android:id="@+id/buttonG"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5px"
+                    android:text="位移"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_yellow_selector"/>
+
+            <Button android:id="@+id/buttonH"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5px"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="缩放"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_yellow_selector"/>
+
+            <Button android:id="@+id/buttonI"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5px"
+                    android:text="翻转"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_yellow_selector"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <Button android:id="@+id/buttonJ"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5px"
+                    android:text="组合"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_yellow_selector"/>
+
+            <Button android:id="@+id/buttonK"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5px"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="抛物线"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_yellow_selector"/>
+
+            <Button android:id="@+id/buttonL"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5px"
+                    android:text="组合2"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_yellow_selector"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView android:id="@+id/animationIV"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_alignParentBottom="true"
+               android:layout_marginBottom="200dp"
+               android:padding="5px"
+               android:src="@drawable/animation1"/>
+
+
+</RelativeLayout>

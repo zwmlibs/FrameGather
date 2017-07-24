@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_widget"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.zm.framegather.activity.WidgetActivity"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <!--
+
+        缩放类型—ScaleType：
+        center	                                居中，无缩放
+        centerCrop	                            保持宽高比缩小或放大，使得两边都大于或等于显示边界。居中显示。
+        focusCrop	                            同centerCrop, 但居中点不是中点，而是指定的某个点
+        centerInside	                        使两边都在显示边界内，居中显示。如果图尺寸大于显示边界，则保持长宽比缩小图片。
+        fitCenter	                            保持宽高比，缩小或者放大，使得图片完全显示在显示边界内。居中显示
+        fitStart	                            同上。但不居中，和显示边界左上对齐
+        fitEnd	                                同fitCenter， 但不居中，和显示边界右下对齐
+        fitXY	                                不保存宽高比，填充满显示边界
+        none	                                如要使用tile mode显示, 需要设置为none
+        推荐使用：focusCrop 类型
+
+
+        XML属性：
+        fadeDuration	                        淡入淡出动画持续时间(单位：毫秒ms)
+        actualImageScaleType	                实际图像的缩放类型
+        placeholderImage	                    占位图
+        placeholderImageScaleType	            占位图的缩放类型
+        progressBarImage	                    进度图
+        progressBarImageScaleType	            进度图的缩放类型
+        progressBarAutoRotateInterval	        进度图自动旋转间隔时间(单位：毫秒ms)
+        failureImage	                        失败图
+        failureImageScaleType	                失败图的缩放类型
+        retryImage	                            重试图
+        retryImageScaleType	                    重试图的缩放类型
+        backgroundImage	                        背景图
+        overlayImage	                        叠加图
+        pressedStateOverlayImage	            按压状态下所显示的叠加图
+        roundAsCircle	                        设置为圆形图
+        roundedCornerRadius	                    圆角半径
+        roundTopLeft	                        左上角是否为圆角
+        roundTopRight	                        右上角是否为圆角
+        roundBottomLeft	                        左下角是否为圆角
+        roundBottomRight	                    右下角是否为圆角
+        roundingBorderWidth	                    圆形或者圆角图边框的宽度
+        roundingBorderColor	                    圆形或者圆角图边框的颜色
+        roundWithOverlayColor	                圆形或者圆角图底下的叠加颜色(只能设置颜色)
+        viewAspectRatio	                        控件纵横比
+
+        -->
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/ImgIcon"
+        android:layout_marginTop="30dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        fresco:failureImage="@mipmap/icon_failure"
+        fresco:placeholderImage="@mipmap/icon_placeholder"
+        fresco:retryImage="@mipmap/icon_retry"
+        fresco:progressBarImage="@mipmap/icon_progress_bar"
+        fresco:progressBarAutoRotateInterval="5000"
+        fresco:fadeDuration="5000"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:roundedCornerRadius="10dp"
+        fresco:roundingBorderWidth="1dp"
+        fresco:roundingBorderColor="@color/base_color"
+        fresco:roundWithOverlayColor="@color/white"/>
+
+    <TextView
+        android:layout_below="@+id/ImgIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="图片加载成功"/>
+
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/ImgIcon2"
+        android:layout_below="@+id/ImgIcon"
+        android:layout_marginTop="50dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        fresco:failureImage="@mipmap/icon_failure"
+        fresco:placeholderImage="@mipmap/icon_placeholder"
+        fresco:retryImage="@mipmap/icon_retry"
+        fresco:progressBarImage="@mipmap/icon_progress_bar"
+        fresco:progressBarAutoRotateInterval="5000"
+        fresco:fadeDuration="5000"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:roundAsCircle="true"
+        fresco:roundingBorderWidth="1dp"
+        fresco:roundingBorderColor="@color/base_color"
+        fresco:roundWithOverlayColor="@color/white"/>
+
+    <TextView
+        android:layout_below="@+id/ImgIcon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="图片加载失败"/>
+
+    <TextView
+        android:id="@+id/TXTCacheSize"
+        android:layout_above="@+id/BtnClearCache"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/BtnClearCache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清除图片缓存"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_yellow_selector"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

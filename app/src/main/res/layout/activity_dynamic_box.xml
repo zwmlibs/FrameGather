@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.zm.framegather.activity.DynamicBoxActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/BtnLoading"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_yellow_selector"
+            android:textColor="@color/white"
+            android:text="加载"/>
+
+        <Button
+            android:id="@+id/BtnLoading2"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_yellow_selector"
+            android:textColor="@color/white"
+            android:text="加载失败"/>
+
+        <Button
+            android:id="@+id/BtnLoading3"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_yellow_selector"
+            android:textColor="@color/white"
+            android:text="无网络"/>
+
+        <Button
+            android:id="@+id/BtnLoading4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_yellow_selector"
+            android:textColor="@color/white"
+            android:text="隐藏"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/LLContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ImgGifPic"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                fresco:failureImage="@mipmap/ic_launcher"
+                fresco:placeholderImage="@mipmap/ic_launcher"
+                fresco:retryImage="@mipmap/ic_launcher"
+                fresco:failureImageScaleType="centerCrop"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:roundAsCircle="false" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ImgGifPic2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                fresco:failureImage="@mipmap/ic_launcher"
+                fresco:placeholderImage="@mipmap/ic_launcher"
+                fresco:retryImage="@mipmap/ic_launcher"
+                fresco:failureImageScaleType="centerCrop"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:roundAsCircle="false" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ImgGifPic3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                fresco:failureImage="@mipmap/ic_launcher"
+                fresco:placeholderImage="@mipmap/ic_launcher"
+                fresco:retryImage="@mipmap/ic_launcher"
+                fresco:failureImageScaleType="centerCrop"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:roundAsCircle="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

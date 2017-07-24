@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/CVInfo"
+        fresco:failureImage="@mipmap/icon_failure"
+        fresco:placeholderImage="@mipmap/icon_placeholder"
+        fresco:retryImage="@mipmap/icon_retry"
+        fresco:progressBarImage="@mipmap/icon_progress_bar"
+        fresco:progressBarAutoRotateInterval="3000"
+        fresco:fadeDuration="3000"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:roundAsCircle="false"
+        android:layout_alignParentLeft="true"/>
+
+    <com.zm.framegather.view.ScaleButton
+        android:id="@+id/item_button"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="添加"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg_yellow"
+        android:layout_margin="5dp"
+        >
+    </com.zm.framegather.view.ScaleButton>
+
+</RelativeLayout>

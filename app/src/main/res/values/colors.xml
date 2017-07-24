@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="textview">#656565</color>
+    <!-- 标题栏 -->
+    <color name="normal_bg">#EEEEEE</color>
+    <color name="title_bg">#EF3121</color>
+    <!-- 一般颜色值 -->
+    <color name="sign_bg">#90000000</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#42BAFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_drak">#9A9A9A</color>
+    <color name="purple">#644379</color>
+    <color name="green">#A0E75A</color>
+    <color name="green_drak">#74BF37</color> <!-- 主色调 深绿 -->
+    <color name="red">#EE3121</color>
+    <color name="khaki">#D26C41</color>
+    <color name="waterred">#F46E63</color>
+    <color name="yellow">#FFDA44</color>
+    <color name="yellow_light">#FFF7D6</color>
+    <color name="gray_type">#e6e6e6</color>
+    <color name="gray_light">#999999</color>
+    <color name="gray_line">#dfdfdf</color>
+    <color name="gray">#F0F0F0</color> <!-- 背景色 浅灰色 -->
+    <color name="gray_edit">#e0e0e0</color>
+    <color name="gold">#FFA75A</color>
+    <color name="dark">#4F4F4F</color>
+    <color name="dark_light">#707070</color>
+    <color name="basebtn_yellow">#7E551B</color>
+    <color name="brown">#7E551B</color>
+    <color name="paly_yellow">#fffcf7</color> <!-- 个人信息条目背景色 浅黄色 -->
+    <color name="light_yellow">#ffda44</color>  <!-- 提现按钮背景色/标题背景色  淡黄色（主色调） -->
+    <color name="paly_gray">#948e87</color> <!-- 字体颜色 浅灰色 -->
+    <color name="btn_pressed_bg">#90ededed</color> <!-- 按钮点击后背景色 透明度90%灰色 -->
+    <color name="item_pressed_bg">#ededed</color> <!-- 条目点击后背景色 灰色 -->
+    <color name="parting_line">#f8eed5</color> <!-- 我的资料item分割线 浅褐色 -->
+    <color name="infoedit_parting_line">#c9c9c9</color>  <!-- 对话框条目分割线 浅灰 -->
+    <color name="dark_grey">#272118</color>  <!-- 设置页面字体颜色 深灰 -->
+    <color name="about_bg">#f1f1f1</color>  <!-- 关于页面背景色 深灰 -->
+    <color name="date_text">#bebcbc</color>  <!-- 消息item日期字体 浅灰 -->
+    <color name="help_parting_line">#f1f0f0</color>  <!-- 帮助页面条目分割线 浅灰 -->
+    <color name="evaluate_bg">#fff9dc</color>  <!-- 评价背景色 浅黄 -->
+    <color name="money_color_yellow">#CD7400</color>  <!-- 已还金额字体颜色 浅黄 -->
+    <color name="money_color_blue">#3B7CB8</color>  <!-- 待还金额字体颜色 浅蓝 -->
+    <color name="listview_parting_line">#BABABA</color>  <!-- listview分割线 浅灰 -->
+    <color name="shopCart_bg">#E4E4E4</color>  <!-- 购物车总价栏背景色 -->
+    <color name="bank_text">#4B4A46</color>  <!-- 银行卡名称字体颜色 -->
+    <color name="activity">#563210</color>
+    <color name="actibity_red">#cd141c</color>
+    <color name="activity_red1">#ee777d</color>
+    <color name="activity_yellow">#fff001</color>
+    <color name="button_text">#535353</color>
+    <color name="button_gray">#736E6E</color>
+    <color name="orange">#EE783B</color>
+
+
+    <color name="gray_bg">#F6F5F6</color> <!-- 灰色背景 -->
+    <color name="gray_parting_line">#DBDBDB</color> <!-- 灰色背景 -->
+
+    <color name="base_color">#00AEFF</color>
+    <color name="base_text_color">#333333</color>
+    <color name="base_press_color">#D04C49</color>
+    <color name="bank_text_bg">#704B4A46</color>  <!-- 银行卡名称字体颜色 -->
+</resources>

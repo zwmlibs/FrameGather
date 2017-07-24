@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@color/base_color">
+
+    <TextView
+        android:id="@+id/BtnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/white"
+        android:text="返回"
+        android:visibility="gone"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/TXTTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:text="首页"
+        android:textColor="@color/white"
+        android:textSize="@dimen/TitleTextSize"/>
+
+    <TextView
+        android:id="@+id/BtnOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="20dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:text="确定"/>
+
+</RelativeLayout>
